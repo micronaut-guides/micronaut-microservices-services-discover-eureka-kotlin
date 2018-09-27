@@ -94,7 +94,7 @@ Write a test:
 [source,kotlin]
 .bookrecommendation/src/test/kotlin/example/micronaut/bookrecommendation/BookControllerSpec.kt
 ----
-include::{sourceDir}/bookrecommendation/src/test/kotlin/example/micronaut/bookrecommendation/BookControllerSpec.kt[]
+include::{sourceDir}/bookrecommendation/src/test/kotlin/example/micronaut/bookrecommendation/BooksControllerSpec.kt[]
 ----
 
 <1> For JUnit you can write methods to start and stop the server for the scope of the test
