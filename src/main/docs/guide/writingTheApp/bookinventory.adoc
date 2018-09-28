@@ -42,8 +42,6 @@ Write a test:
 include::{sourceDir}/bookinventory/src/test/kotlin/example/micronaut/bookinventory/BooksControllerSpec.kt[]
 ----
 
-<1> For JUnit you can write methods to start and stop the server for the scope of the test
-
 Edit `application.yml`
 
 [source,yaml]
