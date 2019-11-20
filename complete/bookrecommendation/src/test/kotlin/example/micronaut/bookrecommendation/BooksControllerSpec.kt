@@ -8,10 +8,10 @@ import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 import kotlin.test.assertEquals
 
-object BookControllerSpec: Spek({
+object BookControllerSpec : Spek({
     describe("BookController Suite") {
-        var embeddedServer : EmbeddedServer = ApplicationContext.run(EmbeddedServer::class.java)
-        var client : RxStreamingHttpClient  = embeddedServer.applicationContext.createBean(RxStreamingHttpClient::class.java, embeddedServer.url)
+        var embeddedServer: EmbeddedServer = ApplicationContext.run(EmbeddedServer::class.java)
+        var client: RxStreamingHttpClient = embeddedServer.applicationContext.createBean(RxStreamingHttpClient::class.java, embeddedServer.url)
 
         it("books can be retrieved") {
             val req = HttpRequest.GET<Any>("/books")
