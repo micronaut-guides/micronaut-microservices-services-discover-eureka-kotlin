@@ -92,9 +92,9 @@ include::{sourceDir}/bookrecommendation/src/test/kotlin/example/micronaut/bookre
 Write a test:
 
 [source,kotlin]
-.bookrecommendation/src/test/kotlin/example/micronaut/bookrecommendation/BookControllerSpec.kt
+.bookrecommendation/src/test/kotlin/example/micronaut/bookrecommendation/BookControllerTest.kt
 ----
-include::{sourceDir}/bookrecommendation/src/test/kotlin/example/micronaut/bookrecommendation/BooksControllerSpec.kt[]
+include::{sourceDir}/bookrecommendation/src/test/kotlin/example/micronaut/bookrecommendation/BooksControllerTest.kt[]
 ----
 
 

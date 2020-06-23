@@ -1,14 +1,15 @@
 # Tests 
 
-Run Eureka.
+## To run tests:
 
-cd ../eureka$
-eureka $ ./gradlew bootRun
+./gradlew test
 
-Run the microservices
+## To run acceptance test
+
+Run Consul.
 
 ./gradlew run -parallel 
 
-Open a new terminal and run both functional and acceptance test
+Open a new terminal:
 
-./gradlew test
+./gradlew acceptancetest:test

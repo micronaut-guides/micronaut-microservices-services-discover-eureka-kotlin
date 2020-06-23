@@ -6,9 +6,9 @@ import io.reactivex.Flowable
 
 @Controller("/books") // <1>
 class BooksController(private val bookCatalogueOperations: BookCatalogueOperations,
-                     private val bookInventoryOperations: BookInventoryOperations) { // <2>
+                      private val bookInventoryOperations: BookInventoryOperations) { // <2>
 
-    @Get("/") // <3>
+    @Get // <3>
     fun index(): Flowable<BookRecommendation> {
         return bookCatalogueOperations.findAll()
                 .flatMapMaybe { b ->

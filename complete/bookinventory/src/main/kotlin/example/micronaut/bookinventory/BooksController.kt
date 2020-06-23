@@ -19,6 +19,7 @@ open class BooksController {
     private fun bookInventoryByIsbn(isbn: String): Optional<BookInventory> {
         if (isbn == "1491950358") {
             return Optional.of(BookInventory(isbn, 4))
+
         } else if (isbn == "1680502395") {
             return Optional.of(BookInventory(isbn, 0))
         }
